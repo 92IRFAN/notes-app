@@ -9,7 +9,7 @@ import notesRoutes from './routes/notes-routes.js';
 import usersRoutes from './routes/users-routes.js';
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 app.use('/uploads/images', express.static('uploads/images'));
 
 app.use(express.json()); 
