@@ -18,6 +18,10 @@ app.use(cors());
 app.use('/notes', notesRoutes);
 app.use('/users', usersRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Server API is running');
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
