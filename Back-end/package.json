@@ -4,11 +4,13 @@
   "description": "notes-app-backend",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js"
   },
   "keywords": [
     "my-notes"
-  ],
+  ], 
   "author": "irfan",
   "license": "ISC",
   "dependencies": {
