@@ -12,8 +12,15 @@ const app = express();
 const port = process.env.PORT || 8080;
 app.use('/uploads/images', express.static('uploads/images'));
 
-app.use(express.json()); 
-app.use(cors());
+const corsConfig = {
+    origin: '*',
+    credentials: true,
+    methods: 'GET, POST, PUT, DELETE, OPTIONS',
+}
+
+app.use(express.json());
+app.options('*', cors(corsConfig));
+app.use(cors(corsConfig));
 
 app.use('/notes', notesRoutes);
 app.use('/users', usersRoutes);
