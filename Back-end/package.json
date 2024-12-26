@@ -4,8 +4,7 @@
   "description": "notes-app-backend",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js",
-    "dev": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "my-notes"
